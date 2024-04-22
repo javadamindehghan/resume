@@ -1,0 +1,669 @@
+body {
+  direction: rtl;
+
+}
+
+.header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9e8e6;
+  padding: 0 40px 0 40px;
+
+  top: 0;
+  right: 0;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav > ul {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav > ul > li {
+  text-decoration: none;
+  width: 100px;
+  position: relative;
+  font-size: 16px;
+  padding: 12px 0 12px 0;
+}
+.nav > ul > li {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.nav > ul > {
+  text-decoration: none;
+}
+
+.nav > ul > li::after {
+  content: "";
+  width: 0;
+  bottom: 0px;
+  height: 3px;
+  position: absolute;
+  right: 0px;
+  background-color: var(--first-color);
+  transition: all 5s;
+  transition: width 0.5s;
+}
+.nav > ul > li.active::after {
+  width: 40px;
+}
+.bsnner-img {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.content-home {
+  margin-top: 50px;
+  overflow: hidden;
+  height: 100vh;
+
+  background-size: 100% 100%;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  width: auto;
+}
+
+@keyframes example {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.content-home h2 {
+  text-align: center !important;
+  margin-bottom: 40px;
+  color: wheat;
+  width: 300px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.content-home Button {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: example;
+}
+
+.bsnner-img .content-home .MuiButton-root {
+  border-radius: 30px;
+  font-size: 14px;
+}
+.Abouttop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Abouttop h1 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.Abouttop h1::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--first-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  transform: translateX(-50%);
+}
+.Abouttop p {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ulleft,
+.ulright {
+  list-style: none;
+  text-align: left;
+}
+.userimage {
+  overflow: hidden;
+  border-radius: 10px;
+  padding-top: 30px;
+  margin: 20px;
+}
+.userimage img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+.myname {
+  text-align: center;
+  margin: 20px;
+}
+.aboutskills {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutskills p {
+  text-align: center;
+}
+.skillPercentage {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 0 20px 0 20px;
+}
+.parentPercentage {
+  margin: 0 20px 0 20px;
+  height: 10px;
+  width: 90%;
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+.fillPercentage {
+  height: 100%;
+  width: 0;
+
+  background-color: var(--first-color);
+  transition: width 0.5s ease-in;
+}
+.fillPercentage.active {
+  width: 100%;
+}
+.portfolio-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio-top h1 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.portfolio-top h1::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: var(--first-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(-50%);
+}
+.item-img {
+  height: 300px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.item-img img {
+  height: 100%;
+  width: 350px;
+  display: flex;
+}
+
+.after {
+  height: 120%;
+  width: 350px;
+  background-color: var(--first-color);
+  opacity: 0.2;
+  position: absolute;
+  border-radius: 100%;
+
+  top: 0;
+  transition: all 0.5s ease-in;
+}
+
+.item-img:hover > .after {
+  height: 120%;
+  width: 350px;
+  background-color: var(--first-color);
+  opacity: 0.4;
+  position: absolute;
+  border-radius: 100%;
+  top: -150px;
+}
+.item-img > p {
+  position: absolute;
+  right: -70%;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  transition: ease-in 0.6s all;
+  color: var(--first-color);
+  font-size: 24px;
+}
+.item-img:hover > p {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.myinfo p {
+  text-align: left;
+  padding-left: 40px;
+}
+.myinfo h3 {
+  text-align: left;
+  padding-left: 40px;
+}
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  --hue: 255;
+  --first-color: hsl(var(--hue), 90%, 60%);
+  --first-color-alt: hsl(var(--hue), 82%, 56%);
+  --first-color-light: hsl(var(--hue), 40%, 80%);
+  --title-color: hsl(var(--hue), 24%, 16%);
+  --text-color: hsl(var(--hue), 8%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 60%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 100%);
+  --shadow-color: hsla(var(--hue), 90%, 30%, 0.1);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color 0.4s;
+}
+
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== THEME ===============*/
+.nav__actions {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+  direction: ltr;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.perfil {
+  width: 250px;
+  height: 250px;
+  background-color: var(--body-color);
+  border: 8px solid var(--first-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.4s;
+}
+
+.perfil__content {
+  width: 180px;
+  height: 180px;
+  border: 10px solid var(--first-color);
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-end;
+  background: linear-gradient(
+    180deg,
+    hsl(var(--hue), 90%, 80%),
+    hsl(var(--hue), 90%, 30%)
+  );
+}
+
+.perfil__img {
+  width: 160px;
+}
+
+.main {
+  overflow: hidden;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+  box-shadow: 0 8px 24px hsla(var(--hue), 90%, 30%, 0.3);
+}
+
+/*=============== HOME ===============*/
+.home {
+  position: relative;
+  border-bottom: 8px solid var(--first-color);
+}
+.parallax-card{
+  margin: 40px !important;
+}
+.home__rectangle {
+  width: 100%;
+  height: 220px;
+  background-color: var(--first-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home__container {
+  padding-block: 1rem 3rem;
+}
+
+.home__perfil {
+  justify-self: center;
+}
+
+.home__content {
+  row-gap: 3rem;
+}
+
+.home__data {
+  row-gap: 0.75rem;
+  text-align: center;
+}
+
+.home__name {
+  font-size: var(--biggest-font-size);
+}
+
+.home__profession {
+  font-size: var(--h2-font-size);
+}
+
+.home__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.home__social-link {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  transition: color 0.4s;
+}
+
+.home__social-link:hover {
+  color: var(--first-color);
+}
+
+.home__button {
+  justify-self: center;
+}
+
+/*=============== MEDIA QUERIES ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+   .perfil {
+    width: 500px;
+    height: 500px;
+    border-width: 10px;
+  }
+  .perfil__content {
+    width: 420px;
+    height: 420px;
+    border-width: 10px;
+  }
+  .perfil__img {
+    width: 100%;
+    height: 100%;
+  }
+  .home__rectangle {
+    width: 30vw;
+    height: 100%;
+  }
+  .home__container {
+    position: relative;
+    grid-template-columns: 500px 300px;
+    align-items: center;
+    column-gap: 4rem;
+    padding-block: 3.5rem 8rem;
+  }
+  .home__content {
+    row-gap: 4rem;
+  }
+  .home__data {
+    row-gap: 1rem;
+    text-align: initial;
+  }
+  .home__social {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    position: absolute;
+    top: -4rem;
+    bottom: 0;
+    right: 0;
+  }
+  .home__button {
+    justify-self: flex-start;
+  }
+}  
+
+@media screen and (min-width: 1500px) {
+  .home__rectangle {
+    width: 33vw;
+  }
+}
+
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+@media screen and (min-width: 2048px) {
+  .home__rectangle {
+    width: 40vw;
+  }
+}  
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --duration: 250ms;
+}
+
+main {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  position: relative;
+  padding: 1rem;
+}
+
+.target {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+.shadow {
+  position: absolute;
+  width: 80%;
+  bottom: -1rem;
+  left: 5%;
+  margin-inline: auto;
+  height: 1rem;
+  border-radius: 50%;
+  background-image: radial-gradient(rgba(0,0,0,1), transparent);
+  filter: blur(5px);
+  transition: all var(--duration) ease-in-out;
+  opacity: .25;
+  
+}
+
+figure {
+  aspect-ratio: 1;
+  border-radius: .5rem;
+  overflow: hidden;  
+  transform: rotateZ(-10deg);
+  transform-origin: left bottom;
+  transition: all var(--duration) ease-in-out;
+  display: block;
+}
+
+figure img {
+  transform: rotateZ(10deg) scale(1.2);
+  object-fit: cover;
+  object-position: top center;
+  width: 250px;
+  height: 250px;
+  transition: transform var(--duration) ease-in-out;
+}
+
+/* Hover states */
+.container:has(.target:hover) .shadow {
+  width: 90%;
+  filter: blur(6px);
+  opacity: .75;
+}
+
+.container:has(.target:hover) figure {
+  transform: rotateZ(0deg) translateY(1.25rem);
+  box-shadow: 0 2px 4px -2px rgba(0,0,0,.5);
+}
+
+.container:has(.target:hover) figure img {
+  transform: rotateZ(0deg) scale(1.2);
+}
