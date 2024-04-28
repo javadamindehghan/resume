@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.10b01dd4.css",
-    "main.js": "/resume/static/js/main.dab4105f.js",
+    "main.js": "/resume/static/js/main.b4f1a667.js",
     "static/js/453.33610e1b.chunk.js": "/resume/static/js/453.33610e1b.chunk.js",
     "static/media/blog.png": "/resume/static/media/blog.82c6e37e67d707cbdb17.png",
     "static/media/login.png": "/resume/static/media/login.021e208c11ee6ad570fa.png",
     "static/media/compile.jpg": "/resume/static/media/compile.24e28c8a85418dcaf352.jpg",
     "static/media/user.png": "/resume/static/media/user.0eeae7aac592d13dffb2.png",
     "static/media/color.png": "/resume/static/media/color.476b07f7600c093a5639.png",
+    "static/media/ecommerce.jpg": "/resume/static/media/ecommerce.9191cc369fa0e1beb3fe.jpg",
     "static/media/dashbord.jpg": "/resume/static/media/dashbord.23a6224bcbcaed1d3259.jpg",
     "static/media/pagination.png": "/resume/static/media/pagination.f3fcec603fb18a323e34.png",
     "static/media/weather.jpg": "/resume/static/media/weather.c192462a73850dec30eb.jpg",
@@ -19,11 +20,11 @@
     "static/media/bascket.jpg": "/resume/static/media/bascket.2d0efc75e293521cc256.jpg",
     "index.html": "/resume/index.html",
     "main.10b01dd4.css.map": "/resume/static/css/main.10b01dd4.css.map",
-    "main.dab4105f.js.map": "/resume/static/js/main.dab4105f.js.map",
+    "main.b4f1a667.js.map": "/resume/static/js/main.b4f1a667.js.map",
     "453.33610e1b.chunk.js.map": "/resume/static/js/453.33610e1b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10b01dd4.css",
-    "static/js/main.dab4105f.js"
+    "static/js/main.b4f1a667.js"
   ]
 }
