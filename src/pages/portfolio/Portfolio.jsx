@@ -23,6 +23,7 @@ import SNAKE from "../../img/portfolio/SNAKE.jpg";
 import Personal from "../../img/portfolio/personal.jpg";
 import Dashboard from "../../img/portfolio/dashbord.jpg";
 import Admin from "../../img/portfolio/admin.jpg";
+import Ecommerce from "../../img/portfolio/ecommerce.jpg";
 
 export default function Portfolio() {
   return (
@@ -33,6 +34,16 @@ export default function Portfolio() {
 
       <Container fixed>
         <Grid style={{ textAlign: "center" }} alignItems="center" container>
+        <Grid item xs={12} md={6} lg={4}>
+            <Item
+              title="Shoe and clothing store"
+              href="https://ecommerce-website-eicj.vercel.app/"
+              Thumbnail={Ecommerce}
+            >
+              {" "}
+              <img src={Ecommerce} alt="" />
+            </Item>
+          </Grid>
           <Grid item xs={12} md={6} lg={4}>
             <Item
               title="Admin Panel"
